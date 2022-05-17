@@ -1,7 +1,15 @@
 - Feature Name: oneDNN Integration via BYOC
 - Start Date: 2021-11-29
-- RFC PR: [apache/tvm-rfcs#0042](https://github.com/apache/tvm-rfcs/pull/0042)
+- RFC PR: [apache/tvm-rfcs#0069](https://github.com/apache/tvm-rfcs/pull/0069)
 - GitHub PR: [PR#9671](https://github.com/apache/tvm/pull/9671/commits)
+-            [PR#9797](https://github.com/apache/tvm/pull/9797/commits)
+-            [PR#9995](https://github.com/apache/tvm/pull/9995/commits)
+-            [PR#9996](https://github.com/apache/tvm/pull/9996/commits)
+-            [PR#10112](https://github.com/apache/tvm/pull/10112/commits)
+-            [PR#10266](https://github.com/apache/tvm/pull/10266/commits)
+-            [PR#10421](https://github.com/apache/tvm/pull/10421/commits)
+-            [PR#10835](https://github.com/apache/tvm/pull/10835/commits)
+-            [PR#10836](https://github.com/apache/tvm/pull/10837/commits)
 
 # Summary
 [summary]: #summary
@@ -57,14 +65,14 @@ We have enhanced and updated the support. Currently, the following ops/post-op f
 
 ## Ops
 - nn.conv2d
+- depthwise conv
+- nn.conv3d
 - nn.dense
 - nn.relu
 - nn.max_pool2d
 - nn.avg_pool2d
 - matrix multiplication *
 - nn.conv1d *
-- nn.conv3d *
-- depthwise conv *
 
 ## Post-Op Fusions
 - conv2d_bias_sum_relu
@@ -72,14 +80,14 @@ We have enhanced and updated the support. Currently, the following ops/post-op f
 - conv2d_bias
 - dense_bias_relu
 - dense_bias
-- Eltwise Post-op *
+- Eltwise Post-op
 - Depthwise *
 - Binary *
 - PReLu *
 
 ## Datatype
 - Float32
-- BF16 *
+- BF16
 - INT8 *
 
 ## Verified Models (from gluoncv)

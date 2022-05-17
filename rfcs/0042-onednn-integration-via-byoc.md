@@ -1,15 +1,7 @@
 - Feature Name: oneDNN Integration via BYOC
 - Start Date: 2021-11-29
 - RFC PR: [apache/tvm-rfcs#0069](https://github.com/apache/tvm-rfcs/pull/0069)
-- GitHub PR: [PR#9671](https://github.com/apache/tvm/pull/9671/commits)
--            [PR#9797](https://github.com/apache/tvm/pull/9797/commits)
--            [PR#9995](https://github.com/apache/tvm/pull/9995/commits)
--            [PR#9996](https://github.com/apache/tvm/pull/9996/commits)
--            [PR#10112](https://github.com/apache/tvm/pull/10112/commits)
--            [PR#10266](https://github.com/apache/tvm/pull/10266/commits)
--            [PR#10421](https://github.com/apache/tvm/pull/10421/commits)
--            [PR#10835](https://github.com/apache/tvm/pull/10835/commits)
--            [PR#10836](https://github.com/apache/tvm/pull/10837/commits)
+- GitHub PR: [PR#9671](https://github.com/apache/tvm/pull/9671/commits), [PR#9797](https://github.com/apache/tvm/pull/9797/commits), [PR#9995](https://github.com/apache/tvm/pull/9995/commits), [PR#9996](https://github.com/apache/tvm/pull/9996/commits), [PR#10112](https://github.com/apache/tvm/pull/10112/commits), [PR#10266](https://github.com/apache/tvm/pull/10266/commits), [PR#10421](https://github.com/apache/tvm/pull/10421/commits), [PR#10835](https://github.com/apache/tvm/pull/10835/commits), [PR#10836](https://github.com/apache/tvm/pull/10837/commits)
 
 # Summary
 [summary]: #summary
@@ -48,11 +40,11 @@ Compilation config
 Runtime config
 - 20 warm-up and 100 batches
 
-![Figure 1 latency scenario](https://github.com/crazydemo/tvm-rfcs/blob/main/rfcs/assets/0042/latency.png)
+![Figure 1 latency scenario](https://github.com/crazydemo/tvm-rfcs/blob/main/rfcs/assets/0069/latency.png)
 
-![Figure 2 Throughput scenario](https://github.com/crazydemo/tvm-rfcs/blob/main/rfcs/assets/0042/throughput.png) 
+![Figure 2 Throughput scenario](https://github.com/crazydemo/tvm-rfcs/blob/main/rfcs/assets/0069/throughput.png) 
 
-![Figure 3 Real-time scenario](https://github.com/crazydemo/tvm-rfcs/blob/main/rfcs/assets/0042/real-time.png)
+![Figure 3 Real-time scenario](https://github.com/crazydemo/tvm-rfcs/blob/main/rfcs/assets/0069/real-time.png)
 
 # Reference-level explanation
 This proposal aims to provide a new approach to integrate oneDNN into TVM via DNNL JSON codegen/runtime by applying the following adjustments to tackle the aforementioned issues: 
